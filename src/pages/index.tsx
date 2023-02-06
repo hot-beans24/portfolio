@@ -1,8 +1,8 @@
-import { Text } from "@chakra-ui/react"
+import HomePage from "@/components/pages/Home.page"
 
 const Home = () => {
   return (
-    <Text>Chakra UI</Text>
+    <HomePage />
   )
 }
 
