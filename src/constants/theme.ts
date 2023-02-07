@@ -12,7 +12,7 @@ export const theme = extendTheme({
         boxSizing: "border-box"
       },
       body: {
-        backgroundColor: "#ffffff"
+        // backgroundColor: "#ffffff"
       }
     },
   },

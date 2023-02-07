@@ -15,10 +15,12 @@ const Navigation = () => {
           <Link
             as={NextLink}
             href={navItem.pathName}
+            
             color={navItem.pathName === router.pathname ? "blue.400" : ""}
             fontSize={{ base: "sm", sm: "md" }}
             position="relative"
             letterSpacing="0.1em"
+
             _after={{
               content: '""',
               display: "block",
@@ -31,6 +33,7 @@ const Navigation = () => {
               translate: "-50%",
               transition: "0.2s"
             }}
+
             _hover={{
               color: "blue.400",
               _after: {
