@@ -1,12 +1,23 @@
-import NextLink from 'next/link'
-import { Link, Flex, HStack } from '@chakra-ui/react'
+import React from 'react'
+import { HStack } from '@chakra-ui/react'
 
 import Logo from '@/components/layouts/Logo'
 import Navigation from '@/components/layouts/Navigation'
 
 const Header = () => {
   return (
-    <HStack as="header" w="100%" p={{ base: 4, sm: 8 }} alignItems="center" position="sticky" top={0} zIndex={2000}>
+    <HStack
+      as="header"
+      
+      width="100%"
+      padding={{ base: 4, sm: 6 }}
+      bgColor="white"
+      boxShadow="sm"
+      alignItems="center"
+      position="sticky"
+      top={0}
+      zIndex={2000}
+    >
       <Logo />
       <Navigation />
     </HStack>

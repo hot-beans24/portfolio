@@ -44,7 +44,7 @@ const Navigation = () => {
             {navItem.pageName}
           </Link>
           {index < 2 && (
-            <Divider orientation="vertical" h="20px" borderColor="gray.400" />
+            <Divider orientation="vertical" height="20px" borderColor="gray.400" />
           )}
         </React.Fragment>
       ))}

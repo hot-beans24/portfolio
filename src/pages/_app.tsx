@@ -1,12 +1,13 @@
 import Head from 'next/head'
 import type { AppProps } from 'next/app'
 import { ChakraProvider } from '@chakra-ui/react'
+import { AnimatePresence, motion } from 'framer-motion'
 
 import { theme } from '@/constants/theme'
 
 import Layout from '@/components/layouts/Layout'
 
-const App = ({ Component, pageProps }: AppProps) => {
+const App = ({ Component, pageProps, router }: AppProps) => {
   return (
     <>
       <Head>
@@ -14,9 +15,11 @@ const App = ({ Component, pageProps }: AppProps) => {
         <title>Portfolio</title>
       </Head>
       <ChakraProvider theme={theme}>
-        <Layout>
-          <Component {...pageProps} />
-        </Layout>
+        <AnimatePresence mode="wait">
+          <Layout>
+            <Component {...pageProps} key={router.route} />
+          </Layout>
+        </AnimatePresence>
       </ChakraProvider>
     </>
   )

@@ -1,8 +1,12 @@
-
+import PageTransitionAnimate from "@/components/animation/PageTransitionAnimate"
+import PageHeading from "../parts/PageHeading"
 
 const SkillsPage = () => {
   return (
-    <h1>Skills Page</h1>
+    <PageTransitionAnimate>
+      <PageHeading title="スキル" />
+      <h1>Skills Page</h1>
+    </PageTransitionAnimate>
   )
 }
 

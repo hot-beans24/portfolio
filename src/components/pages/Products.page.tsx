@@ -1,8 +1,12 @@
-
+import PageTransitionAnimate from "@/components/animation/PageTransitionAnimate"
+import PageHeading from "../parts/PageHeading"
 
 const ProductsPage = () => {
   return (
-    <h1>Products Page</h1>
+    <PageTransitionAnimate>
+      <PageHeading title="制作物" />
+      <h1>Products Page</h1>
+    </PageTransitionAnimate>
   )
 }
 

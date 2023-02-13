@@ -5,9 +5,9 @@ import { faLeaf } from '@fortawesome/free-solid-svg-icons'
 
 const Logo = () => {
   return (
-    <Link as={NextLink} href="/" mr="auto" fontSize={{ base: "md", lg: "2xl" }} fontWeight={500}>
+    <Link as={NextLink} href="/" marginRight="auto" color="blue.400" fontSize={{ base: "md", lg: "2xl" }} fontWeight={500}>
       <FontAwesomeIcon icon={faLeaf} style={{ marginRight: "0.4rem" }} />
-      Hot Beans
+      Portfolio
     </Link>
   )
 }

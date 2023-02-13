@@ -2,7 +2,7 @@ import { extendTheme } from "@chakra-ui/react"
 
 export const theme = extendTheme({
   fonts: {
-    body: "Poppins, Noto Sans JP"
+    body: "Poppins, Zen Kaku Gothic"
   },
   styles: {
     global: {
@@ -12,7 +12,8 @@ export const theme = extendTheme({
         boxSizing: "border-box"
       },
       body: {
-        // backgroundColor: "#ffffff"
+        lineHeight: 1.7,
+        backgroundColor: "gray.50"
       }
     },
   },
@@ -23,6 +24,11 @@ export const theme = extendTheme({
         _hover: {
           textDecoration: "none"
         }
+      }
+    },
+    Text: {
+      baseStyle: {
+        letterSpacing: "0.1em"
       }
     }
   }
