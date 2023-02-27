@@ -1,9 +1,7 @@
-import SkillsPage from "@/components/pages/Skills.page"
+import SkillsPage from '@/components/pages/Skills.page'
 
 const Skills = () => {
-  return (
-    <SkillsPage />
-  )
+  return <SkillsPage />
 }
 
 export default Skills

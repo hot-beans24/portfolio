@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import type { AppProps } from 'next/app'
 import { ChakraProvider } from '@chakra-ui/react'
-import { AnimatePresence, motion } from 'framer-motion'
+import { AnimatePresence } from 'framer-motion'
 
 import { theme } from '@/constants/theme'
 

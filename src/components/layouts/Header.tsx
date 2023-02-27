@@ -1,4 +1,3 @@
-import React from 'react'
 import { HStack } from '@chakra-ui/react'
 
 import Logo from '@/components/layouts/Logo'
@@ -8,10 +7,10 @@ const Header = () => {
   return (
     <HStack
       as="header"
-      
+
       width="100%"
       padding={{ base: 4, sm: 6 }}
-      bgColor="white"
+      bgColor="whiteAlpha.800"
       boxShadow="sm"
       alignItems="center"
       position="sticky"

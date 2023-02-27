@@ -1,8 +1,8 @@
 import { type ReactNode } from 'react'
 import { Container } from '@chakra-ui/react'
 
-import Header from '@/components/layouts/Header'
 import FirstVisitAnimate from '@/components/animation/FirstVisitAnimate'
+import Header from '@/components/layouts/Header'
 
 const Layout = ({ children }: { children: ReactNode }) => {
   return (
@@ -14,6 +14,5 @@ const Layout = ({ children }: { children: ReactNode }) => {
     </FirstVisitAnimate>
   )
 }
-
 
 export default Layout
