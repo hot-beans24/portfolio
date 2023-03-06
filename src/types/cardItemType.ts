@@ -12,3 +12,13 @@ export type Skill = {
   level: 1|2|3|4|5;
   imgSrc: string;
 }
+
+export type Output = {
+  id: number,
+  name: string;
+  title: string;
+  techs: string[];
+  githubLink?: string;
+  siteLink?: string;
+  // imgSrc: string;
+}
